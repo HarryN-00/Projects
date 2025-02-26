@@ -1,0 +1,60 @@
+Description
+This project demonstrates the application of K-Means clustering to categorise countries based on various economic and health indicators using the Country-data.csv dataset. By analysing features like 
+GDP per capita, child mortality rate, and inflation, we categorise countries into three distinct clusters: Developed, Developing, and Undeveloped.
+
+Table of Contents
+1.	Installation Instructions
+2.	Usage
+3.	Preprocessing and Feature Selection
+4.	Correlation Map
+5.	K-Means Clustering
+6.	Visualisations
+7.	Results and Conclusions
+8.	Credits
+
+1.	Installation Instructions
+To run this project locally, follow these steps:
+Clone the repository: git clone https://github.com/HarryN-00/Kmeans_task.git
+Navigate the project directory: cd Projects
+Read & install all dependencies: pip install -r requirements.txt 
+Country Data (CSV): https://1drv.ms/f/c/d2524e93f1fffa2a/EiTCPCnMuj5JuI2M_a7-IKMB25oGhOmDNzG-jbnV85soGg?e=FXjcUS 
+
+2.	Usage
+Once the project is set up, you can run the code by executing the Jupyter notebook K-means_task.ipynb.
+Execute the code: Run all cells
+
+3.	Preprocessing and Feature Selection
+The first step in the analysis is to preprocess the dataset. This includes:
+•	Handling missing values
+•	Selecting the relevant continuous features, such as health, inflation, life expectancy and so on, which are used to categorise countries into clusters.
+
+4.	Correlation Map
+Before performing clustering, we analyse the relationships between the features. A correlation matrix is plotted to understand how different variables are related. This step is crucial for identifying which features are most influential in the clustering process.
+
+5.	K-Means Clustering
+The core of this project is the application of the K-Means clustering algorithm. Here, the following steps are taken:
+•	Elbow Method: Used to determine the optimal number of clusters (K). The optimal K is selected at the point where the inertia starts to level off.
+•	Silhouette Score: Provides a measure of how well each data point fits into its assigned cluster, ensuring that the chosen K is the best.
+After evaluating both methods, I determined that K=3 is the optimal number of clusters.
+
+6.	Visualisations
+Several visualisations are created to help interpret the clustering results:
+1.	Subplots of continuous independent features against GDP per capita: These plots help in visualising the relationship between various features and GDP per capita.
+2.	Subplots of continuous independent features against child mortality: These plots reveal how the features relate to child mortality.
+3.	Scatterplots of Clusters:
+o	Child Mortality vs. GDP per capita: This scatter plot visualises how countries with low GDP per capita tend to have higher child mortality rates, and vice versa.
+o	Inflation vs. GDP per capita: The scatter plot helps demonstrate how inflation varies across different stages of economic development.
+
+7.	Results and Conclusions
+The results of the K-Means clustering and subsequent visualisations reveal significant insights about the economic and health status of countries.
+1.	Child Mortality vs. GDP per capita:
+o	Green Cluster (Undeveloped Countries): This cluster represents the least developed countries, as they have the highest child mortality rates and the lowest GDP per capita.
+o	Blue Cluster (Developed Countries): These countries are characterised by high GDP per capita and relatively low child mortality rates, reflecting better health and living standards.
+o	Red Cluster (Developing Countries): The countries in this cluster have intermediate GDP per capita and child mortality rates, indicating that they are in the process of development.
+2.	Inflation vs. GDP per capita:
+o	Blue Cluster (Developed Countries): These countries show high GDP per capita and moderate inflation, reflecting stable economies.
+o	Green Cluster (Undeveloped Countries): Countries in this cluster have low GDP per capita but relatively high inflation, which is a common characteristic of economically struggling nations.
+o	Red Cluster (Developing Countries): These countries have GDP per capita and inflation rates that fall between the blue and green clusters, indicating a transition from underdeveloped to developed status.
+
+8.	Credits
+This project was conducted by myself, Harry Nolan.
