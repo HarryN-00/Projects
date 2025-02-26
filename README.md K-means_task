@@ -1,4 +1,5 @@
-Description
+K-Means Clusters (Country Dataset)
+
 This project demonstrates the application of K-Means clustering to categorise countries based on various economic and health indicators using the Country-data.csv dataset. By analysing features like 
 GDP per capita, child mortality rate, and inflation, we categorise countries into three distinct clusters: Developed, Developing, and Undeveloped.
 
@@ -17,7 +18,7 @@ To run this project locally, follow these steps:
 Clone the repository: git clone https://github.com/HarryN-00/Kmeans_task.git
 Navigate the project directory: cd Projects
 Read & install all dependencies: pip install -r requirements.txt 
-Country Data (CSV): https://1drv.ms/f/c/d2524e93f1fffa2a/EiTCPCnMuj5JuI2M_a7-IKMB25oGhOmDNzG-jbnV85soGg?e=FXjcUS 
+Country Data (CSV) or take it my repository: https://1drv.ms/f/c/d2524e93f1fffa2a/EiTCPCnMuj5JuI2M_a7-IKMB25oGhOmDNzG-jbnV85soGg?e=FXjcUS 
 
 2.	Usage
 Once the project is set up, you can run the code by executing the Jupyter notebook K-means_task.ipynb.
